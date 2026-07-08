@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #1e1e2f;
+
+    color: white;
+
+}
+
+
+
+h1 {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#tabuleiro {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 120px);
+
+    grid-template-rows: repeat(3, 120px);
+
+    gap: 8px;
+
+}
+
+
+
+.casa {
+
+    background: white;
+
+    color: #1e1e2f;
+
+    border-radius: 15px;
+
+    font-size: 70px;
+
+    font-weight: bold;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    cursor: pointer;
+
+
+    transition: 0.2s;
+
+}
+
+
+
+.casa:hover {
+
+    transform: scale(1.05);
+
+    background: #eeeeee;
+
+}
+
+
+
+#vez {
+
+    margin-top: 25px;
+
+    font-size: 25px;
+
+}
+
+
+
+button {
+
+    margin-top: 25px;
+
+
+    padding: 15px 40px;
+
+
+    border: none;
+
+
+    border-radius: 30px;
+
+
+    font-size: 20px;
+
+
+    cursor: pointer;
+
+
+    background: white;
+
+
+    color: #1e1e2f;
+
+
+    transition: 0.3s;
+
+}
+
+
+
+button:hover {
+
+    transform: scale(1.1);
+
+}
